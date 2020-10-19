@@ -1,0 +1,17 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{% include "blueprint/scripts.html" %}
+	<title>{{title}}</title>
+</head>
+<body>
+{% include "blueprint/navbar.html" %}
+{% include "blueprint/jumbotron.html" %}
+{% block content %}
+
+{% endblock content %}
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="contentInduk">
+	<div class="content-kiri">
+		<h1>About Our Salon</h1>
+		<p>Inri Salon adalah salah satu salon terbaik yang ada di mamuju, Salon inri ini resmi dibuka pada tahun 2009 di provinsi Sulawesi Barat
+		 Mamuju. Sampai saat ini Salon Inri masih menjadi salah satu salon terbaik yang sering dikunjungi masayarakat mamuju yang ingin melakukan perawatan, fasilitas yang lengkap dan juga tempat yang bersih menjadikan Salon Inri salon terbaik yang ada di Mamuju Provinsi Sulawesi Barat </p>
+		 <br>
+		 <div class="card">
+	     <img class="card-img-top" src="{%static "img/Murni Saide.jpg"%}" >
+	    <div class="card-body">
+	    	
+		      <h5 class="card-title">{{varIndex.titleCardPhoto}}</h5>
+		      <p class="card-text">{{varIndex.bodyCardPhoto}}</p>
+		      <p class="card-text"><small class="text-muted"></small></p>
+	    	
+	    </div>
+	  </div>
+
+	</div>
+	<div class="content-kanan">
+		<h1>Maps</h1>
+		<iframe class="framePeta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.420839166046!2d118.87565611431303!3d-2.6903139395268316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d92d9fd10f3b8fb%3A0x1dd6977dfa5f3a44!2sINRI%20SALON%202!5e0!3m2!1sid!2sid!4v1602503006275!5m2!1sid!2sid" width="99%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<h1>Daftar Harga</h1>
+		<table class="table1">
+		
+							<tbody>
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+
+								<tr >
+									<td class="text-left">Brandon Green</td>
+									<td class="text-left">Brandon Green</td>
+								</tr>
+							</tbody>
+						</table>
+	</div>
+</div>
+
+
+	<div class="VideoProject ">
+		<div class="layerTransparan">
+		<h1 class="text-center">Video Galery</h1>
+		<div class="contentCard">
+		{% include "blueprint/cardView.html" %}
+		</div>
+
+	</div>
+</div>
+{% endblock content %}

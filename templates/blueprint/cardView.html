@@ -1,0 +1,25 @@
+{% load static %}
+<div class="card-deck">
+  
+    {% for video in varVideo %}
+      
+    <div class="card">
+          <video controls class="card-img-top">
+        <source src="{%static "upload/video/"%} {{ video.video}}" type="video/mp4" />
+
+      Browsermu tidak mendukung tag ini, upgrade donk!
+        </video>
+        <div class="card-body">
+          <h5 class="card-title">{{video.judulVideo}}</h5>
+          <p class="card-text">{{video.category}}<small class="text-muted"></small></p>
+          <p class="card-text">{{video.contentVideo}}</p>
+          <p class="card-text">{{video.tanggalPost}}<small class="text-muted"></small></p>
+      </div>
+    </div>  
+    
+  
+  {% endfor %}
+
+  
+
+</div>
